@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+/* Desktop Styles */
+
+body{
+	font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    background-color: #ffffff;
+    color: black; }
+
+.logo {
+    margin-top: 10px;
+	margin-bottom: 0px;
+    margin-right: 20px;
+    text-align: center;
+    }
+
+.box video {
+width: 100%;
+height: auto;
+overflow: auto;}
+
+
+.mycontact{
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+	margin-bottom: 20px;
+	margin-top: 60px;
+	padding:50px;}
+.mycontact .button{
+	background-color: #000000;
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weigh: bold;
+	text-decoration: none;
+	
+}
+
+.footer {
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding:20px;
+	font-weight: bold;}
+
+
+/* Style the form element with a border around it - Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
+
+form {
+	margin-top: 20px;
+	font-family: 'Raleway', sans-serif;
+    border: 0px solid #f1f1f1;
+    text-align: center;
+    padding: 30px 30px 30px 30px;}
+
+/* Add some padding and a grey background color to containers */
+.container {
+	width: 100%;
+	padding-bottom: 20px;
+    margin-top:30px;
+	margin-bottom: 50px;
+	margin-left: 0px;
+	margin-right: 20px;
+	text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;}
+
+/* Style the input elements and the submit button*/
+input[type=text], input[type=email], input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-style: groove;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	
+}
+/* Style the submit button */
+input[type=submit] {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weigh: bold;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.results{	
+padding: 20px;
+margin: 30px;
+text-align: center;
+}
+
+.container .email{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+    font-size: 20px;
+	text-decoration: underline;
+	padding: 10px;}
+	
+
+/* Navigation Main Styles */
+
+
+/* Style the navbar */
+#navbar {
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+	background-color: #000000;
+	width:100%;
+	top: 0px;
+	z-index: 900;
+	position: sticky;}
+
+/* Navbar links */
+#navbar a {
+  font-family: 'Raleway', sans-serif;
+  float: center;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  overflow: visible;}
+
+#navbar a:hover {
+	text-decoration: underline;
+	background: #ffffff;
+	color: #423E3E;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+/* Responsive Styles with CSS media query */
+@media all and (max-width : 768px) {
+    
+.box video{width:100%; height:auto;margin-left:0px;}
+.footer {
+    display: block;}
+   
+}
+
+	
+/* end media query */
